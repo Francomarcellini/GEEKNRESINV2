@@ -1,0 +1,182 @@
+@import "footer";
+@import "mediaqueries";
+@import "variables";
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgba(240, 240, 240, 0.541);
+}
+/* MODIFICACIONES DEL HEADER */
+header {
+    height: 30vh;
+    background-color: $color-principal;/* color orientativo tamaño de contenedor */
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.header__inicio{
+    display: flex;
+    flex-direction: column;
+
+}
+.header__titulo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 65%;
+    background-color: rgba(0, 255, 255, 0);/* color orientativo tamaño de contenedor */
+    & h1{
+        text-align: end;
+        font-size: 10vw ;
+        padding-left: 5%;
+        }
+    & img {
+        height: 12vw;
+        width: auto;
+    }
+    
+}
+.header__nav{
+    height: 35%;
+    background-color: rgba(137, 43, 226, 0);/* color orientativo tamaño de contenedor */
+}
+/* MODIFICACIONES DEL MAIN */
+main{
+    height: 240vh;
+    background-color: rgba(247, 138, 74, 0);/* color orientativo tamaño de contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.carrousel{
+    height: 35%;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+    width: 90%;
+    padding: 5%;
+    background-color: rgba(255, 0, 0, 0);/* color orientativo tamaño de contenedor */
+    &__1{
+        height: 30%;
+        align-items: center;
+    }
+    & &__A {
+        display: flex;
+        flex-direction: row;
+    }
+    & &__B {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    & img {
+        height: 120%;
+        width: auto;
+    }
+}
+
+.main__nosotros{
+    height: 100vh;
+    background-color: rgba(247, 138, 74, 0);/* color orientativo tamaño de contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+.main__contacto{
+    height: 60vh;
+    background-color: rgba(247, 138, 74, 0);/* color orientativo tamaño de contenedor */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+}
+.contacto__form{
+    display: flex;
+    & img{
+        height: 70%;
+    }
+    
+}
+
+.nosotros__contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    & img{
+        width: 50%;
+        height: auto;
+    }
+    & p{
+        width: 45%;
+        height: auto;
+    }
+    
+    }
+.galeria{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100% ;
+    text-align:center ;
+    &__fotos{
+        display: grid;
+        background-color: rgba(0, 0, 255, 0);/* color orientativo tamaño de contenedor */
+        height: 100%;
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: " img__1 img__1 img__2 "
+        "img__1 img__1 img__3" 
+        "img__4 img__5 img__5"
+        "img__6 img__5 img__5"
+        "img__7 img__7 img__8"
+        "img__7 img__7 img__9"    
+        ;
+            .img__1{
+                grid-area: img__1;
+            }
+            .img__2{
+                grid-area: img__2;
+            }
+            .img__3{
+                grid-area: img__3;
+            }
+            .img__4{
+                grid-area: img__4;
+            }
+            .img__5{
+                grid-area: img__5;
+            }
+            .img__6{
+                grid-area: img__6;
+            }
+            .img__7{
+                grid-area: img__7;
+            }
+            .img__8{
+                grid-area: img__8;
+            }
+            .img__9{
+                grid-area: img__9;
+            }
+        & img{
+            height: 18vw;
+        }
+        & div{
+            background-color: rgba(165, 42, 42, 0);/* color orientativo tamaño de contenedor */
+            text-align: center;
+            color: white;
+        }
+        
+        }
+    
+}
+

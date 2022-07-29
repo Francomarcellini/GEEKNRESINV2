@@ -1,0 +1,25 @@
+{
+  "name": "clase-29295-p2",
+  "version": "1.0.0",
+  "description": "<h1> VERSION 2  </h1> \r <h1>GEEK N RESIN </h1> \r <h2>este esl el sitio para un emprendedor oficinista</h2> \r <h2>tecnologias usadas </h2> \r <ul>\r <li>HTML5</li>\r <li>CSS</li>\r <li>BOOTSTRAP</li>\r <li>SASS</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francomarcellini/GEEKNRESINV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Francomarcellini/GEEKNRESINV2/issues"
+  },
+  "homepage": "https://github.com/Francomarcellini/GEEKNRESINV2#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

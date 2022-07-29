@@ -1,0 +1,78 @@
+/* MEDIA QUIERIE PARA CELU */
+@media (min-width: 320px) and (max-width: 575px) {
+    .contenido{
+        &__1{
+            height: 30%;
+            align-items: center;
+        }
+        & &__A {
+            display: flex;
+            flex-direction: column;
+        }
+        & &__B {
+            display: flex;
+            flex-direction: column;
+        }
+        &__1 img{
+            height: 50%;
+        }
+        &__1 p{
+            height: 50%;
+        }
+    }
+    .galeria__fotos{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        }
+    .galeria__fotos div{
+        height: 10%;
+    }
+    .galeria__fotos img{
+        height: 100%;
+    }
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__contacto {
+        height: 85vh;
+    }
+
+}
+/* MEDIA QUIERIE PARA TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+    .contenido__1{
+        height: 30%;
+        align-items: center;
+    }
+    .contenido .contenido__A {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido .contenido__B {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contenido__1 img{
+        height: 50%;
+    }
+    .contenido__1 p{
+        height: 50%;
+    }
+    .galeria__fotos{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        }
+    .galeria__fotos div{
+        height: 10%;
+    }
+    .galeria__fotos img{
+        height: 100%;
+    }
+}
+
