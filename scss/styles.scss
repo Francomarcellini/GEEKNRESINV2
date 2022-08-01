@@ -31,11 +31,12 @@ header {
     & h1{
         text-align: end;
         font-size: 10vw ;
-        padding-left: 5%;
+        padding-right: 2%;
         }
     & img {
         height: 12vw;
         width: auto;
+        padding-left: 2%;
     }
     
 }
@@ -45,7 +46,7 @@ header {
 }
 /* MODIFICACIONES DEL MAIN */
 main{
-    height: 240vh;
+    height: auto;
     background-color: rgba(247, 138, 74, 0);/* color orientativo tamaño de contenedor */
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@ main{
     align-items: center;
 }
 .carrousel{
-    height: 35%;
+    height: 100vh
 }
 .contenido{
     display: flex;
@@ -64,7 +65,7 @@ main{
     padding: 5%;
     background-color: rgba(255, 0, 0, 0);/* color orientativo tamaño de contenedor */
     &__1{
-        height: 30%;
+        height: 34vw;
         align-items: center;
     }
     & &__A {
@@ -123,14 +124,23 @@ main{
 .galeria{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: 100% ;
     text-align:center ;
+    &__titulo{
+        height: 10vh;
+        width: auto;
+        h2{
+            margin-top: 13px;
+            font-size: 3rem;       
+        }
+    }
     &__fotos{
         display: grid;
         background-color: rgba(0, 0, 255, 0);/* color orientativo tamaño de contenedor */
         height: 100%;
-        width: auto;
+        width: 95%;
+        gap: 5px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: " img__1 img__1 img__2 "
@@ -142,36 +152,72 @@ main{
         ;
             .img__1{
                 grid-area: img__1;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__2{
                 grid-area: img__2;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__3{
                 grid-area: img__3;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__4{
                 grid-area: img__4;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__5{
                 grid-area: img__5;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__6{
                 grid-area: img__6;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__7{
                 grid-area: img__7;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__8{
                 grid-area: img__8;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
             .img__9{
                 grid-area: img__9;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
             }
         & img{
-            height: 18vw;
+            width: 44vw;       
         }
         & div{
-            background-color: rgba(165, 42, 42, 0);/* color orientativo tamaño de contenedor */
+            background-color: rgba(165, 42, 42, 0.842);/* color orientativo tamaño de contenedor */
             text-align: center;
             color: white;
         }
