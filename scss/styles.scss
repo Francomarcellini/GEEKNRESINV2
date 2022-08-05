@@ -1,3 +1,4 @@
+@import"operators";
 @import "footer";
 @import "mediaqueries";
 @import "variables";
@@ -34,8 +35,7 @@ header {
         padding-right: 2%;
         }
     & img {
-        height: 12vw;
-        width: auto;
+        @include sizes (12vw, auto);
         padding-left: 2%;
     }
     
@@ -60,8 +60,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 65%;
-    width: 90%;
+    @include sizes (65%, 90%);
     padding: 5%;
     background-color: rgba(255, 0, 0, 0);/* color orientativo tamaño de contenedor */
     &__1{
@@ -77,8 +76,7 @@ main{
         flex-direction: row-reverse;
     }
     & img {
-        height: 120%;
-        width: auto;
+        @include sizes (120%, auto);
     }
 }
 
@@ -107,29 +105,29 @@ main{
 }
 
 .nosotros__contenido{
+    @include sizes (100%, auto);
+    gap: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     & img{
-        width: 50%;
-        height: auto;
+        @include sizes (auto, 50%);
     }
     & p{
-        width: 45%;
-        height: auto;
+        @include sizes (auto, 50%);
     }
     
     }
 .galeria{
     display: flex;
     flex-direction: column;
+    @include sizes (100%, 95%);
     width: 95%;
     height: 100% ;
     text-align:center ;
     &__titulo{
-        height: 10vh;
-        width: auto;
+        @include sizes (10vh, auto);
         h2{
             margin-top: 13px;
             font-size: 3rem;       
@@ -138,8 +136,7 @@ main{
     &__fotos{
         display: grid;
         background-color: rgba(0, 0, 255, 0);/* color orientativo tamaño de contenedor */
-        height: 100%;
-        width: 95%;
+        @include sizes (100%, 95%);
         gap: 5px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
@@ -153,64 +150,55 @@ main{
             .img__1{
                 grid-area: img__1;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__2{
                 grid-area: img__2;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__3{
                 grid-area: img__3;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__4{
                 grid-area: img__4;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__5{
                 grid-area: img__5;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__6{
                 grid-area: img__6;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__7{
                 grid-area: img__7;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__8{
                 grid-area: img__8;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
             .img__9{
                 grid-area: img__9;
                     img{
-                        height: 100%;
-                        width: 100%;
+                        @include sizes (100%, 100%);
                     }
             }
         & img{

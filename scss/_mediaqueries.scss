@@ -1,3 +1,5 @@
+@import "operators";
+
 /* MEDIA QUIERIE PARA CELU */
 @media (min-width: 320px) and (max-width: 575px) {
     .contenido{
@@ -23,8 +25,7 @@
     .galeria__fotos{
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 100%;
+        @include sizes (100%, 100%);
         }
     .galeria__fotos div{
         height: 10%;
@@ -65,8 +66,7 @@
     .galeria__fotos{
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 100%;
+        @include sizes (100%, 100%);
         }
     .galeria__fotos div{
         height: 10%;
