@@ -63,6 +63,9 @@ main{
     @include sizes (65%, 90%);
     padding: 5%;
     background-color: rgba(255, 0, 0, 0);/* color orientativo tamaño de contenedor */
+    p{
+        font-size: 3vh;
+    }
     &__1{
         height: 34vw;
         align-items: center;
@@ -70,18 +73,20 @@ main{
     & &__A {
         display: flex;
         flex-direction: row;
+        gap: 2%;
     }
     & &__B {
         display: flex;
         flex-direction: row-reverse;
+        gap: 2%;
     }
     & img {
-        @include sizes (120%, auto);
+        @include sizes (70%, 50%);
     }
 }
 
 .main__nosotros{
-    height: 100vh;
+    height: 100%;
     background-color: rgba(247, 138, 74, 0);/* color orientativo tamaño de contenedor */
     display: flex;
     flex-direction: column;
@@ -103,7 +108,17 @@ main{
     }
     
 }
-
+.materiales{    
+    @include sizes (100%, auto);
+    &__grilla{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include sizes (100%, auto);
+        justify-content: space-around;
+        gap: 29px;
+    }
+}
 .nosotros__contenido{
     @include sizes (100%, auto);
     gap: 2%;
@@ -112,7 +127,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     & img{
-        @include sizes (auto, 50%);
+        @include sizes (100%, 50%);
     }
     & p{
         @include sizes (auto, 50%);
