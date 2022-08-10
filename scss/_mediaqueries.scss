@@ -3,6 +3,9 @@
 /* MEDIA QUIERIE PARA CELU */
 @media (min-width: 320px) and (max-width: 575px) {
     .contenido{
+        .contenido p {
+            font-size: large;
+        }
         &__1{
             height: 30%;
             align-items: center;
