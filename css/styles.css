@@ -10,6 +10,26 @@ footer {
     text-decoration: none;
     color: white; }
 
+.footer__contenido {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.footer__legales {
+  height: auto;
+  width: 50%;
+  padding: 3%; }
+  .footer__legales h3 {
+    font-size: 5rem; }
+
+.footer__redes {
+  height: auto;
+  width: 50%;
+  padding: 3%; }
+  .footer__redes h3 {
+    font-size: 5rem; }
+
 /* condicionales */
 /* MEDIA QUIERIE PARA CELU */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -97,7 +117,7 @@ header {
   /* color orientativo tamaño de contenedor */ }
   .header__titulo h1 {
     text-align: end;
-    font-size: 10vw;
+    font-size: 7vw;
     padding-right: 2%; }
   .header__titulo img {
     height: 12vw;
@@ -192,11 +212,11 @@ main {
   align-items: center;
   justify-content: space-evenly; }
   .nosotros__contenido img {
-    height: 100%;
-    width: 50%; }
+    height: 70%;
+    width: 60%; }
   .nosotros__contenido p {
     height: auto;
-    width: 50%; }
+    width: 40%; }
 
 .galeria {
   display: flex;

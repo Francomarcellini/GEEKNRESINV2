@@ -8,6 +8,25 @@ footer{
     li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    }
+    
 }
-
+.footer__contenido{
+    @include sizes (100%, 100%);
+    display: flex;
+    flex-direction: row;
+}
+.footer__legales{
+    @include sizes (auto, 50%);
+    padding: 3%;
+    h3{
+        font-size: 5rem
+    }
+}
+.footer__redes{
+    @include sizes (auto, 50%);
+    padding: 3%;
+    h3{
+        font-size: 5rem
+    }
 }

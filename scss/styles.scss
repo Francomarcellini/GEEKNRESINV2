@@ -31,7 +31,7 @@ header {
     background-color: rgba(0, 255, 255, 0);/* color orientativo tamaño de contenedor */
     & h1{
         text-align: end;
-        font-size: 10vw ;
+        font-size: 7vw ;
         padding-right: 2%;
         }
     & img {
@@ -127,10 +127,10 @@ main{
     align-items: center;
     justify-content: space-evenly;
     & img{
-        @include sizes (100%, 50%);
+        @include sizes (70%, 60%);
     }
     & p{
-        @include sizes (auto, 50%);
+        @include sizes (auto, 40%);
     }
     
     }
