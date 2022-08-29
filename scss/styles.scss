@@ -40,7 +40,6 @@ header {
     }
     
 }
-
 .header__nav{
     height: 35%;
     background-color: rgba(137, 43, 226, 0);/* color orientativo tamaño de contenedor */
@@ -126,8 +125,8 @@ main{
 }
 .contacto__form{
     display: flex;
-    flex-direction: row;
-    gap: 3%;
+    WIDTH: 70%;
+    JUSTIFY-CONTENT: space-around;
     .contacto_img_container{
         height: 70%;
         img{
@@ -166,6 +165,7 @@ main{
     transform: scale(1.15,1.15);
     transition: all 2s
 }
+
 .galeria{
     display: flex;
     flex-direction: column;
