@@ -20,13 +20,57 @@ footer{
     @include sizes (auto, 50%);
     padding: 3%;
     h3{
-        font-size: 5rem
+        @include sizes(35%, auto);
+        font-size: 5vh;
+    }
+    p{
+        @include sizes(65%, auto);
+        font-size: 2.5vh;
     }
 }
 .footer__redes{
     @include sizes (auto, 50%);
     padding: 3%;
     h3{
-        font-size: 5rem
+        @include sizes(35%, auto);
+        font-size: 5vh
+
+    }
+    .lista-de-redes{
+        @include sizes(65%, auto);
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li{
+            @include sizes(35%, 100%);
+            display: flex;
+            flex-direction: row;
+            a{
+                font-size: 2.5vh;
+            }
+            .instagram{
+                @include sizes(100%, 25%);
+                background-image: url(../resources/Instagram.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain
+            }
+            .facebook{
+                @include sizes(100%, 25%);
+                background-image: url(../resources/Facebook.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain
+            }
+            .twitter{
+                @include sizes(100%, 25%);
+                background-image: url(../resources/Twitter.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain
+            }
+        }
+        
     }
 }

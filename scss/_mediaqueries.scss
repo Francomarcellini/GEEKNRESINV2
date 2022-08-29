@@ -28,7 +28,6 @@
     .galeria__fotos{
         display: flex;
         flex-direction: column;
-        @include sizes (100%, 100%);
         }
     .galeria__fotos div{
         height: 10%;
